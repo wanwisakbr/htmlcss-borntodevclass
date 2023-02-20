@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Photography Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+            padding: 5px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 4px;
+        }
+
+        .fa:hover::before {
+            opacity: 0.7;
+            content: attr(data-hover);
+            display: flex;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 5px;
+
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center
+        }
+
+        nav li {
+            margin: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            margin-top: 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+        }
+
+        .fa-instagram,
+        .fa-camera {
+            color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 30px;" >My Photography Portfolio</h1>
+            <nav>
+                <ul>
+                    <a href="https://www.shutterstock.com/g/itslonicc?rid=251921804&utm_medium=nativeapp&utm_source=ctrbreferral-link"
+                        class="fa fa-camera" data-hover="shutterstock"></a>
+                    <br>
+                    <a href="https://instagram.com/itslonic?igshid=YmMyMTA2M2Y=" class="fa fa-instagram" data-hover="Instagram"></a>
+
+                </ul>
+            </nav>
+        </center>
+    </header>
+    <main>
+        <section id="about">
+
+            <h2 style="color: rgb(223, 61, 61); font-family: 'Times New Roman', Times, serif; font-size: 20px;">about</h2>
+            <p>
+                <hr>
+            <pre style="font-family: 'Times New Roman', Times, serif; font-size: medium; color: #555;">
+    As an Urban Explorer and freelance photographer based in BKK, Thailand.
+    channel my passion for travel into capturing the striking emotions of individuals through
+    my specialized exploration of human, urban, street, and portrait photography. </pre>
+            </p>
+        </section>
+        <section id="gallery">
+            <p id="BKKDW" style="font-family: 'Times New Roman', Times, serif;">Bangkok designweek 2023</p>
+            <div class="gallery-grid">
+
+                <img src="IMG_0250.jpg">
+                <img src="IMG_0394.jpg">
+                <img src="IMG_0403.jpg">
+                <img src="IMG_0662.jpg">
+                <img src="IMG_0690.jpg">
+                <img src="IMG_0708.jpg">
+            </div>
+            <br>
+            <p id="Wedding" style="font-family: 'Times New Roman', Times, serif;">My friend wedding</p>
+            <div class="gallery-grid">
+
+                <img src="IMG_2832.jpg">
+                <img src="IMG_2719.jpg">
+                <img src="IMG_2995.jpg">
+            </div>
+            <br>
+            <p id="travel" style="font-family: 'Times New Roman', Times, serif;">Kaoyai</p>
+            <div class="gallery-grid">
+
+                <img src="IMG_ky1.jpg">
+                <img src="IMG_ky2.jpg">
+                <img src="IMG_ky3.jpg">
+            </div>
+            <br>
+            <p id="Restaurant" style="font-family: 'Times New Roman', Times, serif;">Phranakorn-Food</p>
+            <div class="gallery-grid">
+
+                <img src="IMG_baanlalin.jpg">
+                <img src="IMG_newyonghua.jpg">
+                <img src="IMG_newyonghua2.jpg">
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 15px; color: #8d8d8d;">&copy; 2023 Itslonic Photography Portfolio | ทำเพื่อการศึกษาการเขียนภาษา HTML และ CSS ผ่าน BorntoDev สนุก ๆ ค่ะ
+    </footer>
+</body>
+
+</html>
